@@ -2,10 +2,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ChallengeOneComponent } from './challenge-one/challenge-one.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ChallengeOneComponent
   ],
   imports: [
     BrowserModule
