@@ -6,14 +6,5 @@
 </p>
 <p>Bonus: Can you do this in one pass?</p>
 
-<div>
-  <div>k: {{ k }}</div>
-  <div>numbers: {{ test1 }}</div>
-  <div>found k: {{ isTest1Valid }}</div>
-</div>
-
-<div>
-  <div>k: {{ k }}</div>
-  <div>numbers: {{ test2 }}</div>
-  <div>found k: {{ isTest2Valid }}</div>
-</div>
+<app-example [k]="k" [m]="test1" [isTestValid]="isTest1Valid"></app-example>
+<app-example [k]="k" [m]="test2" [isTestValid]="isTest2Valid"></app-example>

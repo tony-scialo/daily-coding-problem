@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ChallengeOneComponent } from './challenge-one/challenge-one.component';
+import { ExampleComponent } from './challenge-one/example/example.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ChallengeOneComponent
+    ChallengeOneComponent,
+    ExampleComponent
   ],
   imports: [
     BrowserModule

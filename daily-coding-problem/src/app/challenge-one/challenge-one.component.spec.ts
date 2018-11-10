@@ -1,3 +1,4 @@
+import { ExampleComponent } from './example/example.component';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ChallengeOneComponent } from './challenge-one.component';
@@ -8,7 +9,7 @@ describe('ChallengeOneComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ChallengeOneComponent]
+      declarations: [ChallengeOneComponent, ExampleComponent]
     }).compileComponents();
   }));
 
