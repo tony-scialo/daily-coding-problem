@@ -38,4 +38,18 @@ export class ChallengeOneComponent implements OnInit {
 
     return false;
   }
+
+  isAnyTwoNumbersAddToKUsingSet(m: number[], k: number): boolean {
+    const s = new Set();
+
+    for (let x = 0; x < m.length; x++) {
+      if (s.has(k - m[x])) {
+        return true;
+      } else {
+        s.add(m[x]);
+      }
+    }
+
+    return false;
+  }
 }

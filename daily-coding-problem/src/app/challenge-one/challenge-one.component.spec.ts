@@ -34,4 +34,16 @@ describe('ChallengeOneComponent', () => {
     const k = 17;
     expect(component.isAnyTwoNumbersAddToKBruteForce(m, k)).toBeFalsy();
   });
+
+  it('should be able to handle the set function for m = [10, 15, 3, 7] and k = 17 to return true', () => {
+    const m = [10, 15, 3, 7];
+    const k = 17;
+    expect(component.isAnyTwoNumbersAddToKUsingSet(m, k)).toBeTruthy();
+  });
+
+  it('should be able to handle the set function m = [11, 15, 3, 7] and k = 17 to return false', () => {
+    const m = [11, 15, 3, 7];
+    const k = 17;
+    expect(component.isAnyTwoNumbersAddToKUsingSet(m, k)).toBeFalsy();
+  });
 });
