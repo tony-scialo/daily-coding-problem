@@ -8,9 +8,8 @@ describe('ChallengeOneComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ChallengeOneComponent ]
-    })
-    .compileComponents();
+      declarations: [ChallengeOneComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
@@ -21,5 +20,11 @@ describe('ChallengeOneComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should be able to handle the test m = [10, 15, 3, 7] and k = 17 to return true', () => {
+    const m = [10, 15, 3, 7];
+    const k = 17;
+    expect(component.isAnyTwoNumbersAddToKBruteForce(m, k)).toBeTruthy();
   });
 });
