@@ -27,4 +27,10 @@ describe('ChallengeOneComponent', () => {
     const k = 17;
     expect(component.isAnyTwoNumbersAddToKBruteForce(m, k)).toBeTruthy();
   });
+
+  it('should be able to handle the test m = [11, 15, 3, 7] and k = 17 to return false', () => {
+    const m = [11, 15, 3, 7];
+    const k = 17;
+    expect(component.isAnyTwoNumbersAddToKBruteForce(m, k)).toBeFalsy();
+  });
 });
